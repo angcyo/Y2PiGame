@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_layout_game2_first"
+    style="@style/Style_Match" >
+
+    <ImageButton
+        android:id="@+id/id_bt_game_play"
+        android:layout_width="@dimen/ds_gameico_size"
+        android:layout_height="@dimen/ds_gameico_size"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_bt_play" />
+
+    <LinearLayout
+        style="@style/Style_Match"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Style_Wrap"
+            android:text="准备好了吗"
+            android:textColor="@color/col_light"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/id_tx_game_tip"
+            style="@style/Style_Wrap"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="\?"
+            android:textColor="@android:color/white"
+            android:textSize="200sp" />
+    </LinearLayout>
+
+</FrameLayout>

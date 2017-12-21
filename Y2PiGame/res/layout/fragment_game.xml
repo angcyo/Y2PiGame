@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Style_Match" >
+
+    <TextView
+        android:id="@+id/id_tx_game_score"
+        style="@style/Style_Wrap"
+        android:layout_gravity="top|left"
+        android:layout_margin="5dp"
+        android:textColor="@color/col_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/id_tx_game_other"
+        style="@style/Style_Wrap"
+        android:layout_gravity="right|top"
+        android:layout_margin="5dp"
+        android:textColor="@color/col_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/id_tx_game_main_content"
+        style="@style/Style_Wrap"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="280sp" />
+
+    <RelativeLayout
+        style="@style/Style_Wrap"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp" >
+
+        <ImageButton
+            android:id="@+id/id_bt_game_play"
+            android:layout_width="@dimen/ds_gameico_size"
+            android:layout_height="@dimen/ds_gameico_size"
+            android:layout_gravity="bottom|right"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_bt_play" />
+
+        <ImageButton
+            android:id="@+id/id_bt_game_pause"
+            style="@style/Style_Wrap"
+            android:layout_width="@dimen/ds_gameico_size"
+            android:layout_height="@dimen/ds_gameico_size"
+            android:layout_gravity="bottom|right"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_bt_pause"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout_startgame_tip"
+        style="@style/Style_Match"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Style_Wrap"
+            android:text="准备好了吗"
+            android:textColor="@color/col_light"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/id_tx_game_tip"
+            style="@style/Style_Wrap"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="\?"
+            android:textColor="@android:color/white"
+            android:textSize="200sp" />
+    </LinearLayout>
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/id_seekbar_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        app:dsb_max="5000"
+        app:dsb_min="300"
+        app:dsb_value="1000" />
+
+</FrameLayout>

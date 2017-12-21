@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="col_drak">#727272</color>
+    <color name="col_light">#ececec</color>
+    <color name="col_light_tran">#70ececec</color>
+    <color name="col_text_light">#6ab6d8</color>
+    <color name="col_text_dark">#003552</color>
+    <color name="col_text_dark_tran">#50003552</color>
+    <color name="col_tran">#00000000</color>
+
+</resources>

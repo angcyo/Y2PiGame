@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Style_Match"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/col_text_dark_tran"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            style="@style/Style_Wrap"
+            android:text="游戏声音"
+            android:textColor="@color/col_light"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/col_text_dark_tran" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/id_tx_switch_tip"
+                style="@style/Style_Wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="开"
+                android:textColor="@color/col_text_light"
+                android:textSize="20sp" />
+
+            <com.material.widget.Switch
+                android:id="@+id/id_switch_music"
+                style="@style/Style_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/id_tx_switch_sound_tip"
+                style="@style/Style_Wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="开"
+                android:textColor="@color/col_text_light"
+                android:textSize="20sp" />
+
+            <com.material.widget.Switch
+                android:id="@+id/id_switch_sound"
+                style="@style/Style_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/Style_Wrap"
+            android:text="游戏模式"
+            android:textColor="@color/col_light"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/col_text_dark_tran" />
+
+        <RelativeLayout
+            style="@style/Style_Wrap"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/Style_Wrap"
+                android:layout_centerVertical="true"
+                android:text="滚动模式"
+                android:textColor="@color/col_text_light"
+                android:textSize="20sp" />
+
+            <com.material.widget.RadioButton
+                android:id="@+id/id_game_sytle_1"
+                style="@style/Style_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Style_Wrap"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/Style_Wrap"
+                android:layout_centerVertical="true"
+                android:text="填写模式"
+                android:textColor="@color/col_text_light"
+                android:textSize="20sp" />
+
+            <com.material.widget.RadioButton
+                android:id="@+id/id_game_sytle_2"
+                style="@style/Style_Wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

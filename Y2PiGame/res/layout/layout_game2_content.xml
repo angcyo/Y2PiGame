@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_layout_game2_content"
+    style="@style/Style_Match"
+    android:visibility="invisible" >
+
+    <TextView
+        android:id="@+id/id_tx_game_score"
+        style="@style/Style_Wrap"
+        android:layout_gravity="top|left"
+        android:layout_margin="5dp"
+        android:textColor="@color/col_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/id_tx_game_other"
+        style="@style/Style_Wrap"
+        android:layout_gravity="right|top"
+        android:layout_margin="5dp"
+        android:textColor="@color/col_light"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_shape_bt"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/id_text_game_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/id_edit_game_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/col_tran"
+            android:drawableBottom="@drawable/selector_shape_edit"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/col_text_light"
+            android:textCursorDrawable="@null"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Style_Match"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:paddingBottom="40dp" >
+
+        <Button
+            android:id="@+id/id_bt_game_calc"
+            style="@style/Style_Wrap"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_shape_bt"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="匹配答案"
+            android:textColor="@drawable/selector_shape_text" />
+
+        <Button
+            android:id="@+id/id_bt_game_next"
+            style="@style/Style_Wrap"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_shape_bt"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="下一段诗"
+            android:textColor="@drawable/selector_shape_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout_game_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_shape_bt"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/id_tx_right_count"
+            style="@style/Style_Wrap"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_tx_error_count"
+            style="@style/Style_Wrap"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/id_tx_space_count"
+            style="@style/Style_Wrap"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>

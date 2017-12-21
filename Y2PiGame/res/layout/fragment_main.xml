@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Style_Match" >
+    
+    <include layout="@layout/layout_pai_head_title"/>
+
+    <FrameLayout
+        android:id="@+id/id_logo_content"
+        style="@style/Style_Wrap" >
+
+        <ImageView
+            android:id="@+id/id_img_logo_1"
+            android:layout_width="@dimen/ds_default_logo_size"
+            android:layout_height="@dimen/ds_default_logo_size"
+            android:layout_margin="@dimen/ds_default_logo_size"
+            android:src="@drawable/pi_png" />
+
+        <ImageView
+            android:id="@+id/id_img_logo_2"
+            android:layout_width="@dimen/ds_default_logo_size"
+            android:layout_height="@dimen/ds_default_logo_size"
+            android:layout_margin="@dimen/ds_default_logo_size"
+            android:src="@drawable/pi_png" />
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/Style_Match"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/id_bt_startgame"
+            style="@style/Style_Wrap"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_shape_bt"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="开始游戏"
+            android:textColor="@drawable/selector_shape_text" />
+
+        <Button
+            android:id="@+id/id_bt_setting"
+            style="@style/Style_Wrap"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_shape_bt"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="游戏设置"
+            android:textColor="@drawable/selector_shape_text" />
+
+        <Button
+            android:id="@+id/id_bt_paishige"
+            style="@style/Style_Wrap"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_shape_bt"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="圆周率歌"
+            android:textColor="@drawable/selector_shape_text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_tx_thank_tip"
+        style="@style/Style_Wrap"
+        android:layout_gravity="bottom"
+        android:layout_margin="3dp"
+        android:autoLink="all"
+        android:text="感谢:My Uncle and My uncle&apos;s child 感谢他们的灵感与资源.\n博客地址:http://blog.sina.com.cn/s/blog_8740f81c0102v9ox.html"
+        android:textColor="@color/col_light"
+        android:textSize="11sp" />
+
+</FrameLayout>
